@@ -97,7 +97,7 @@ let body = document.querySelector("body")
 let theme_btn = document.querySelector(".toggle-checkbox");
 let navbar2 = document.querySelector(".navbar")
 let intro = document.querySelector(".intro-text");
-let skills_list = document.querySelector(".skills-list")
+let skills_list = document.querySelector(".skills-grid")
 let projects_section = document.querySelector(".projects-section")
 let contact_section = document.querySelector(".contact-section")
 
