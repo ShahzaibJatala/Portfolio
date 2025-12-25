@@ -330,25 +330,6 @@
     text-align: center;
 }
 
-.skills-section ul {
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-
-}
-
-.skills-section li {
-    background-color: var(--card-bg);
-    padding: 0.6rem 1rem;
-    border-radius: var(--form-border-radius);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
 /* project section */
 .projects-section {
     padding: 4rem 2rem;
@@ -533,7 +514,6 @@ footer .brand {
     text-decoration: none;
 }
 
-.skills-section li:hover,
 .socials a:hover {
     color: #fff;
     background-color: var(--highlight-color);
@@ -631,16 +611,6 @@ footer .brand {
         margin-top: 2rem;
     }
 
-    .skills-section ul {
-        /* flex-direction: column; */
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .skills-section li {
-        width: 16rem;
-    }
-
     .contact-section form {
         padding: 0 1rem;
     }
@@ -676,17 +646,6 @@ footer .brand {
     font-size: 1.3rem;
 }
 
-.skills-list2 li {
-    color: skyblue;
-    background-color: var(--card-bg);
-    padding: 0.6rem 1rem;
-    border-radius: var(--form-border-radius);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-}
-
 .projects-section2 {
     padding: 4rem 2rem;
     background-color: var(--text-color);
@@ -715,19 +674,25 @@ footer .brand {
 .skills-grid {
   margin-top: 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   align-items: start;
 }
 
 /* card */
-/* .skill-card {
-  background: #fff;
-  border-radius: 16px;
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+    
+}
+.skill-card {
+  /* background: #fff; */
+  /* border-radius: 16px; */
   padding: 1.25rem;
   text-align: center;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
-} */
+  /* box-shadow: 0 6px 18px rgba(2,6,23,0.06); */
+}
 
 /* the rounded square that holds the logo */
 .icon-wrap {
@@ -761,14 +726,15 @@ footer .brand {
 /* small title + badge */
 .skill-card h3 {
   font-size: 0.95rem;
-  margin: 0.4rem 0 0.4rem;
+  margin: 0.1rem 0 0.1rem;
 }
-.skill-badge {
+
+/* .skill-badge {
   display: inline-block;
   padding: 0.25rem 0.6rem;
   font-size: 0.75rem;
   border-radius: 999px;
   background: rgba(59,130,246,0.08);
   color: #1e40af;
-}
+} */
 
